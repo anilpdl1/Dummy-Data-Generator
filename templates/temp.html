@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+</body>
+<script>
+let btn=document.querySelector('#btn');
+btn.addEventListener('click',()=>{
+    fetch('/templates/temp.html',{
+        method :'POST'
+    })
+})
+</script>
+</html>
